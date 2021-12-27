@@ -1,0 +1,19 @@
+{
+  "name": "web-dev-forms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rafae2k/web-dev-forms.git",
+  "author": "rafae2k <53544360+rafae2k@users.noreply.github.com>",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "global": "^4.4.0",
+    "husky": "^7.0.4"
+  }
+}
