@@ -5,14 +5,29 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <script src="js/main.js" defer></script>
   </head>
 
-  <body>
-    <header>
+  <body class="h-screen w-screen bg-cover bg-[url('/src/assets/cover.svg')]">
+    <header
+      class="
+        w-full
+        backdrop-blur-md
+        bg-white/40
+        py-5
+        drop-shadow-2xl
+        fixed
+        z-10
+        px-[10%]
+        flex
+        items-center
+        justify-between
+      "
+    >
       <a href="/src/index.html">
         <svg
+          class="h-10 w-auto"
           width="180"
           height="98"
           viewBox="0 0 180 98"
@@ -25,15 +40,43 @@
           />
         </svg>
       </a>
+      <nav class="flex gap-4">
+        <a
+          href="/src/index.html"
+          class="
+            transition-all
+            text-xl text-black
+            hover:font-bold hover:border-b-4 hover:border-black
+          "
+          >Inicio</a
+        >
+        <a
+          href="#"
+          class="
+            transition-all
+            text-xl text-black
+            hover:font-bold hover:border-b-4 hover:border-black
+          "
+          >Sobre</a
+        >
+      </nav>
     </header>
 
-    <main>
-      <form action="#" method="post">
-        <h1>Payment form</h1>
+    <main
+      class="content h-screen pt-[10%] flex gap-14 items-center justify-center"
+    >
+      <form action="#" method="post" class="bg-white max-w-xs p-10 rounded-md">
+        <h1 class="text-center font-bold text-2xl pb-5">Payment form</h1>
 
-        <section>
+        <section class="flex flex-col">
           <label for="cc-number">Card number</label>
           <input
+            class="
+              my-2
+              p-1
+              rounded-sm
+              outline outline-black/10 outline-2 outline-offset-1
+            "
             type="text"
             name="card-number"
             id="cc-number"

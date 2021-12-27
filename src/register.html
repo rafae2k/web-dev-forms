@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <title>Document</title>
   </head>
-  <body>
-    <header>
+  <body class="h-screen">
+    <header class="bg-sky-500 py-5 px-[10%] flex items-center justify-between">
       <a href="/src/index.html">
         <svg
+          class="h-12 w-auto"
           width="180"
           height="98"
           viewBox="0 0 180 98"
@@ -22,8 +24,30 @@
           />
         </svg>
       </a>
+      <nav class="flex gap-4">
+        <a
+          href="/src/index.html"
+          class="
+            transition-all
+            text-xl
+            hover:font-bold hover:border-b-4 hover:border-black
+          "
+          >Inicio</a
+        >
+        <a
+          href="#"
+          class="
+            transition-all
+            text-xl
+            hover:font-bold hover:border-b-4 hover:border-black
+          "
+          >Sobre</a
+        >
+      </nav>
     </header>
-    <main>
+    <main
+      class="content h-screen mx-[10%] flex gap-14 items-center justify-center"
+    >
       <h1>Register form</h1>
     </main>
   </body>
